@@ -1,3 +1,5 @@
+Problem A - Car Vet
+
 Bob Roberts is the self proclaimed "Car Vet" who owns several junk car lots where people can come and search for spare parts for their (ailing) cars. The cars in each lot are parked in a fenced-in $m \times
 n$ grid lot, where each car takes up two grid squares. Each lot also has zero or more grid locations devoted to piles of parts (fenders, $8$-track tape players, wheel covers, fuzzy dice, etc.); these locations are effectively blocked.
 Business has been so good that each of Bob's lots has only one empty grid space left.
