@@ -30,9 +30,9 @@ The input will end with a line with two 0s.
 ## Output:
 For each test case, output a single integer, which indicates the maximum satisfaction achievable. Output no spaces, and do not output a blank line between answers.
 
-## Sample Input                   ## Sample Output
-4 4                                  30
-1                                    36
+## Sample Input
+4 4
+1 
 1
 1
 1
@@ -50,3 +50,7 @@ For each test case, output a single integer, which indicates the maximum satisfa
 3 0 1 2 3
 3 0 1 2 3
 0 0
+
+## Sample Output
+30
+36
