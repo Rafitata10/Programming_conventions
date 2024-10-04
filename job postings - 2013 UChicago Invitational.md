@@ -31,26 +31,26 @@ The input will end with a line with two 0s.
 For each test case, output a single integer, which indicates the maximum satisfaction achievable. Output no spaces, and do not output a blank line between answers.
 
 ## Sample Input
-4 4
-1
-1
-1
-1
-1 0 1 2 3
-2 0 1 2 3
-3 0 1 2 3
-3 0 1 2 3
-4 4
-4
-4
-4
-4
-1 0 1 2 3
-2 0 1 2 3
-3 0 1 2 3
-3 0 1 2 3
-0 0
+4 4 // 
+1 // 
+1 // 
+1 // 
+1 // 
+1 0 1 2 3 // 
+2 0 1 2 3 // 
+3 0 1 2 3 // 
+3 0 1 2 3 // 
+4 4 // 
+4 // 
+4 // 
+4 // 
+4 // 
+1 0 1 2 3 // 
+2 0 1 2 3 // 
+3 0 1 2 3 // 
+3 0 1 2 3 // 
+0 0 // 
 
 ## Sample Output
-30
+30 // 
 36
