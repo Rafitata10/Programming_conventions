@@ -9,10 +9,10 @@ The first line of the input contains a single integer $0 ≤ n ≤ 1000$, the nu
 Output the maximum number of power requirements that can be met.
 
 ## Sample Input
-3 - 
-0 3 2 - 
-0 100 100 - 
-1 1 1 - 
+3 // 
+0 3 2 // 
+0 100 100 // 
+1 1 1 // 
 
 ## Sample Output
 2
