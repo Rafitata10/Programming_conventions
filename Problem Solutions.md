@@ -1,4 +1,4 @@
-# Soluciones a Problemas en C++
+# Problem Solutions using C++
 
 Este documento explica cómo se han resuelto los problemas utilizando C++.
 
