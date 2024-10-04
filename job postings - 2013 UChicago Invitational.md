@@ -49,7 +49,7 @@ For each test case, output a single integer, which indicates the maximum satisfa
 2 0 1 2 3 // 
 3 0 1 2 3 // 
 3 0 1 2 3 // 
-0 0 // 
+0 0
 
 ## Sample Output
 30 // 
