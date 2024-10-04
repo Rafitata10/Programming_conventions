@@ -19,16 +19,16 @@ The input ends when no more datasets are provided.
 For each dataset, print a single line containing the minimum number of metro lines required to cover all the key points.
 
 ## Sample Input
-3 1.0 - 
-1 0 - 
-0 1 - 
--1 0 - 
-4 0.5 - 
-1 1 - 
-1 -1 - 
--1 1 - 
--1 -1 - 
+3 1.0 // 
+1 0 // 
+0 1 // 
+-1 0 // 
+4 0.5 // 
+1 1 // 
+1 -1 // 
+-1 1 // 
+-1 -1 // 
 
 ## Sample Output
-1 - 
+1 // 
 2
