@@ -1,28 +1,15 @@
-# Problema A: Car Vet
+# Problem A: Car Vet
 
-Bob Roberts es el autoproclamado "Car Vet" que posee varios lotes de coches en desuso donde las personas pueden venir a buscar piezas de repuesto para sus coches (enfermos). Los coches en cada lote están estacionados en una cuadrícula cerrada de \(m \times n\), donde cada coche ocupa dos cuadros de la cuadrícula. Cada lote también tiene cero o más ubicaciones de cuadrícula dedicadas a pilas de partes (guardabarros, reproductores de cinta de 8 pistas, cubiertas de ruedas, dados peludos, etc.); estas ubicaciones están efectivamente bloqueadas. 
+Bob Roberts is the self proclaimed "Car Vet" who owns several junk car lots where people can come and search for spare parts for their (ailing) cars. The cars in each lot are parked in a fenced-in $m \times n$ grid lot, where each car takes up two grid squares. Each lot also has zero or more grid locations devoted to piles of parts (fenders, $8$-track tape players, wheel covers, fuzzy dice, etc.); these locations are effectively blocked. Business has been so good that each of Bob's lots has only one empty grid space left.
 
-El negocio ha sido tan bueno que cada uno de los lotes de Bob tiene solo un espacio vacío en la cuadrícula.
+From time to time, Bob or one of his lot attendants drops a part on the ground and it rolls underneath one of the cars. The only way to retrieve it is to move the car out of the way. Depending on the location of the empty grid space, it may be necessary to move several cars in order to achieve this. Cars can only move forward or backward, and car movement is also constrained by the fence, which prevents any car from moving off the lot, and by the blocked grid locations containing piles of parts.
 
-De vez en cuando, Bob o uno de sus asistentes dejan caer una parte en el suelo y esta rueda debajo de uno de los coches. La única forma de recuperarla es mover el coche fuera del camino. Dependiendo de la ubicación del espacio vacío en la cuadrícula, puede ser necesario mover varios coches para lograr esto. Los coches solo pueden moverse hacia adelante o hacia atrás, y el movimiento del coche también está limitado por la cerca, que impide que cualquier coche salga del lote, y por las ubicaciones bloqueadas que contienen pilas de partes.
+An ambihelical hexnut has rolled under car number $3$ in row $3$, column $3$ of the grid (shaded dark gray). The space in row $1$, column $3$ is empty and the space in row $3$, column $4$ is blocked. The only way to retrieve the part is to move car $8$, then car $4$, then car $3$. Note that if the locations of the empty grid cell and the blocked grid cell were reversed, it would not be possible to retrieve the part.
 
-Un ejemplo. Un tuerca ambihelicoidal ha rodado debajo del coche número 3 en la fila 3, columna 3 de la cuadrícula (sombría oscuro). El espacio en la fila 1, columna 3 está vacío y el espacio en la fila 3, columna 4 está bloqueado. La única forma de recuperar la parte es mover el coche 8, luego el coche 4, y luego el coche 3.  
-Nota que si las ubicaciones de la celda de cuadrícula vacía y la celda bloqueada se hubieran invertido, no habría sido posible recuperar la parte.
+The problem here should be obvious: For a given location Bob would like to know how to move cars around to uncover that location, or if it is even possible to uncover it.
 
-## Descripción del Problema
-El problema aquí debería ser obvio: para una ubicación dada, Bob gustaría saber cómo mover los coches para descubrir esa ubicación o si es incluso posible descubrirla.
+## Input:
+Input starts with a line containing two positive integers $m$ $n$ $(m, n \leq 250)$ indicating number of rows and columns of the junk car lot. Following this are $m$ lines each containing $n$ integers; the $j^{th}$ value on the $i^{th}$ line indicates the contents of the grid square at row $i$, column $j$. All values $v$ are in the range $-2 \leq v \leq 62\,500$. Each non-negative value indicates that half of a junk car is in that location. Every non-negative value appears exactly twice and these two occurrences are horizontally or vertically adjacent to each other. A value of $-1$ indicates the empty grid location and a value of $-2$ indicates a blocked location. There is always exactly one empty location and at least one car, but there may be zero or more blocked locations. Following these $m$ lines is a single line containing two integers $r$ $c$ $(1 \leq r,c \leq 250)$ indicating the row and column number of the desired location to be uncovered. This will always correspond to the location of a junk car.
 
-### Entrada:
-La entrada comienza con una línea que contiene dos enteros positivos \(m\) \(n\) \((m, n \leq 250)\) que indican el número de filas y columnas del lote de coches en desuso.  
-A continuación, hay \(m\) líneas cada una conteniendo \(n\) enteros; el valor \(j^{th}\) en la línea \(i^{th}\) indica el contenido de la cuadrícula en la fila \(i\), columna \(j\).  
-Todos los valores \(v\) están en el rango \(-2 \leq v \leq 62,500\).  
-Cada valor no negativo indica que la mitad de un coche en desuso está en esa ubicación.  
-Cada valor no negativo aparece exactamente dos veces y estas dos ocurrencias están adyacentes horizontal o verticalmente.  
-Un valor de \(-1\) indica la ubicación de la cuadrícula vacía y un valor de \(-2\) indica una ubicación bloqueada.  
-Siempre hay exactamente una ubicación vacía y al menos un coche, pero puede haber cero o más ubicaciones bloqueadas.  
-A continuación de estas \(m\) líneas hay una sola línea que contiene dos enteros \(r\) \(c\) \((1 \leq r,c \leq 250)\) indicando el número de fila y columna de la ubicación deseada para ser descubierta. Esto siempre corresponderá a la ubicación de un coche en desuso.
-
-### Salida:
-Muestra, en una sola línea separada por espacios, los números de los coches que deben moverse para hacer que la ubicación dada esté vacía. Deben aparecer en el orden en que deben ser movidos.  
-Si hay más de una secuencia de movimientos posibles, muestra la secuencia de longitud más corta. Si aún hay un empate, muestra la secuencia que venga primero lexicográficamente según los números de los coches en la secuencia.  
-Si no es posible descubrir la ubicación deseada, muestra **imposible**.
+## Output:
+Display, on a single line separated by spaces, the numbers of the cars that must be moved to make the given location empty. They should appear in the order in which they must be moved. If there is more than one sequence of possible moves, display the sequence of shortest length. If there is still a tie, display the sequence that comes lexicographically first according to the car numbers in the sequence. If it is not possible to uncover the desired location, display {\tt impossible}.
