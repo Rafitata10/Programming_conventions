@@ -32,7 +32,7 @@ For each test case, output a single integer, which indicates the maximum satisfa
 
 ## Sample Input
 4 4
-1 
+1
 1
 1
 1
