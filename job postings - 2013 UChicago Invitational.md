@@ -1,4 +1,4 @@
-Problem G: Job Posting
+# Problem G: Job Posting
 
 Your university has jobs available for students, and the administration needs for you to help them assign students to jobs. The goal is to have students select their desired positions, and then allocate each student to one of the positions so that the maximum satisfaction is achieved.
 
@@ -16,7 +16,7 @@ Your task is to assign students to positions in a way that maximizes the sum of
 all students’ satisfaction according to the above matrix. Each student must get a
 position, but all positions may not be filled.
 
-Input:
+## Input:
 There will be multiple test cases in the input. Each test case will begin with two integers, n (4≤n≤140) and m (1≤m≤70), where n is the number of postings and m is the number of students. Each of the next n lines will contain a single integer p (1≤p≤10), indicating the number of positions available for that job posting. The job postings are listed in order, from job 0 to job n-1.
 
 Following the job postings will be m lines describing the students. Each student line will have five integers:
@@ -27,12 +27,12 @@ It is guaranteed for every test case that a solution exists where every student 
 
 The input will end with a line with two 0s.
 
-Output:
+## Output:
 For each test case, output a single integer, which indicates the maximum satisfaction achievable. Output no spaces, and do not output a blank line between answers.
 
-Sample Input                      Sample Output
-4 4                               30
-1                                 36
+## Sample Input                   ## Sample Output
+4 4                                  30
+1                                    36
 1
 1
 1
